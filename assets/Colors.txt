@@ -1,0 +1,3 @@
+Blue: #3bc4e1
+Grey: #909090
+Green for the splash screen gradient: #eaecc6
