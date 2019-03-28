@@ -4,11 +4,11 @@ Coming soon.
 
 ## Wiki
 
-Coming soon.
+Learn how to interact with this repository here: https://github.com/xurxe/Rokotin-NHH/wiki
 
 ## Demo
 
-Coming soon.
+https://rokotin.fi 
 
 ## Authors
 We are a Helsinki-based team of developers with diverse professional and personal backgrounds.
