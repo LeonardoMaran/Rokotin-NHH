@@ -1,0 +1,41 @@
+label {
+    color: #3BC4E1;
+    text-align: center;
+}
+
+input {
+    height: 3rem;
+    border: 1px solid #909090;
+    border-radius: 1.5rem;
+    margin: 1rem auto;
+    padding: 0.7rem 0.85rem;
+    text-align: center;
+    width: 90%;
+}
+
+.main-content-travel-country {
+    background: #3BC4E1;
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    height: 3rem;
+    margin: 1rem auto;
+    padding: 0.7rem 0.85rem;
+    width: 75%;
+}
+
+.main-content-travel-country-icon {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding-left: 8px;
+    width: 1.6rem;
+}
+
+.main-content-travel-country-name {
+    line-height: 1.6rem;
+    padding-left: 0.85rem;
+}
