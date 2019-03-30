@@ -1,3 +1,7 @@
+main::-webkit-scrollbar {
+    width: 0;
+}
+
 .main-content-home-item {
     display: flex;
     justify-content: space-between;

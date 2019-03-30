@@ -69,16 +69,20 @@ h2 {
 header {
     background: white;
     display: flex;
-    height: 85px;
+    height: 96px;
     justify-content: space-between;
     margin: auto;
-    padding: 1.2rem;
+    padding: 1rem;
     width: 280px;
 }
 
 header p {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     text-align: center;
+}
+
+#settings {
+    margin-right: 1rem;
 }
 
 
@@ -91,7 +95,7 @@ footer {
     height: 85px;
     justify-content: space-between;
     margin: auto;
-    padding: 1.2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
     position: relative;
     width: 280px;
 }
@@ -109,8 +113,11 @@ footer::before {
 }
 
 footer p {
-    padding-top: 1rem;
     text-align: center;
+}
+
+#vaccinations{
+    margin-left: -1rem;
 }
 
 
@@ -121,12 +128,12 @@ main {
     background: white;
     display: flex;
     flex-direction: column;
-    height: 406px;
+    height: 405px;
     justify-content: flex-start;
     margin: auto;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 1.2rem;
+    padding: 2rem 1rem;
     width: 280px;
     z-index: -10;
 }
@@ -141,4 +148,37 @@ main::-webkit-scrollbar-track {
 
 main::-webkit-scrollbar-thumb {
     background: #3BC4E1;
+}
+
+/* ELEMENTS ********************************************************************* */
+
+label {
+    color: #3BC4E1;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    background: white;
+    display: block;
+    height: 2.4rem;
+    border: 1px solid #909090;
+    border-radius: 1.2rem;
+    margin: 0.25rem auto;
+    padding: 0.7rem 0.85rem 1rem;
+    text-align: center;
+    width: 90%;
+}
+
+button {
+    background: #3BC4E1;
+    border: 1px solid #3BC4E1;
+    display: block;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem auto;
+    padding: 0.7rem 0.85rem;
+    text-align: center;
+    width: 14rem;
 }

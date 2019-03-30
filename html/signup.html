@@ -24,23 +24,6 @@
 
     <body>
 
-        <header>
-            <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
-                <p id="profile-p" class="blue-text">
-                    AIMO
-                </p>
-            </a>
-
-            <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
-                <p id="settings-p" class="blue-text">
-                    SETTINGS
-                </p>
-            </a>
-
-        </header>
-
         <main>
             <h1> 
                 Welcome! <br/>
@@ -48,50 +31,35 @@
             </h1>
 
             <section id="main-content">
-                <!-- will add emails -->
-                    <button id="signup-email">email</button>
-                    <button id="signup-omakanta">OmaKanta</button>           
-                    <button id="signup-facebook">Facebook</button>           
-                    <button id="signup-google">Google</button>
-                    <button id="explore" class="button-grey">Explore the app without an account</button>
+                    <a href="./signup-email.html" class="signup-email-page">
+                        <button id="signup-email">email</button>
+                    </a>
+                    
+                    <button id="signup-omakanta">
+                        <img src="../assets/images/kanta_logo.svg" height="15px" alt="OmaKanta">
+                    </button>
+
+                    <button id="signup-facebook">
+                        <img src="../assets/images/facebook-logo.png" height="20px" alt="Facebook">
+                    </button>  
+
+                    <button id="signup-google">
+                        <img src="../assets/images/Google_2015_logo.svg.png" height="20px" alt="Google">
+                    </button>
+
+                    <a id="explore" href="./home.html">Explore without an account</a>
 
             </section>
 
         </main>
 
-        <footer>
-            <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
-                <p id="home-p" class="white-text">
-                    HOME
-                </p>
-            </a>
+    <footer>
+        <img id="logo" src="../assets/images/rokotin_logo_white.svg" />
+    </footer>
 
-            <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
-                <p id="vaccinations-p" class="white-text">
-                    VACCINATIONS
-                </p>
-            </a>
+    <script src="../js/-common.js"></script>
+    <script src="../js/signup.js"></script>
 
-            <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
-                <p id="calendar-p" class="white-text">
-                    CALENDAR
-                </p>
-            </a>
+</body>
 
-            <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
-                <p id="travel-p" class="white-text">
-                    TRAVEL
-                </p>
-            </a>
-
-        </footer>
-
-        <script src="../js/-common.js"></script>
-        <script src="../js/signup.js"></script>
-
-    </body>
 </html>

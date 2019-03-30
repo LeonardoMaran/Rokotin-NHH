@@ -1,3 +1,8 @@
+main {
+    height: 520px;
+    padding-top: 13rem;
+}
+
 main::-webkit-scrollbar {
     width: 0;
 }
@@ -7,30 +12,7 @@ main::-webkit-scrollbar {
     text-align: center;
 }
 
-label {
-    color: #3BC4E1;
-    text-align: center;
-}
-
-input {
-    display: block;
-    height: 2.4rem;
-    border: 1px solid #909090;
-    border-radius: 1.2rem;
-    margin: 0.25rem auto;
-    padding: 0.7rem 0.85rem;
-    text-align: center;
-    width: 90%;
-}
-
-button {
-    background: #3BC4E1;
-    border: 1px solid #3BC4E1;
-    display: block;
-    height: 3rem;
-    border-radius: 1.5rem;
-    margin: 1.5rem auto;
-    padding: 0.7rem 0.85rem;
-    text-align: center;
-    width: 14rem;
+#logo {
+    width: 100%;
+    padding: 1rem 2rem;
 }
