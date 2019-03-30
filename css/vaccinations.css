@@ -1,0 +1,19 @@
+.main-content-home-item-vaccine-name{
+    text-transform: capitalize
+}
+
+.main-content-home-item-vaccine{
+    width: 12rem;
+}
+
+.vaccination-schedule-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-img{
+    height: 35px;
+    width: 35px;
+
+}

@@ -4,10 +4,10 @@ const db = firebase.firestore();
 const checkProgress = status => {
   const arrStatus = status.split(',').map(item => parseInt(item));
   if (arrStatus[0] === arrStatus[1]) {
-    return 'progress-half';
+    return 'checkmark-round';
   }
   if (arrStatus[0] === 0) {
-    return 'progress-half';
+    return 'x-mark';
   }
   if (arrStatus[1] === 2) {
     return 'progress-half';
@@ -27,26 +27,26 @@ const renderVaccine = vaccinations => {
   mainItem.innerHTML = '';
   Object.entries(vaccinations).forEach(vaccination => {
     const div = document.createElement('div');
-    div.classList.add('vaccinations-main-vaccination-item');
+    div.classList.add('main-content-home-item');
     const infoLink = `
         <a href="./vaccine.html?name=${
           vaccination[0]
-        }" class="vaccination-info-link">
-          <span class="vaccination-info-link-icon ">i</span>
-          <span class="vaccination-info-link-name ">
+        }" class="main-content-home-item-vaccine">
+          <span class="main-content-home-item-vaccine-icon">i</span>
+          <span class="main-content-home-item-vaccine-name">
              ${vaccination[0]}
           </span>
         </a>   
         `;
 
     const scheduleLink = `
-        <a href="./calendar.html" class="vaccination-schedule-link">
+        <a href="" class="vaccination-schedule-link">
             <span class="vaccination-schedule-link-date status-text">
-               Progress:
+               Progress: 
             </span>
-            <span class="vaccination-schedule-link-status">
-              <img src="../assets/images/${checkProgress(vaccination[1])}.svg">
-            </span>
+            <img src="../assets/images/${checkProgress(
+              vaccination[1]
+            )}.svg" class="progress-img" >
         </a>
         `;
     div.innerHTML = infoLink + scheduleLink;

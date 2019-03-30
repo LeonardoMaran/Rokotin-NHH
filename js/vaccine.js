@@ -409,9 +409,29 @@ const showVaccineInfo = ({ longName, age, against }) => {
 
 const generateDisease = disease => {
   console.log(disease);
-  const html = `
+  let html = `
     <h3>${disease.name}</h3>
+    <p>${disease.description}</p>
+    <p>${disease.reason}</p>
+    <p>${disease.symptoms[0]}</p> 
+    <ul>
   `;
+  for (let i = 1; i < disease.symptoms.length; i++) {
+    html += `
+        <li>${disease.symptoms[i]}</li>
+     `;
+  }
+  html += `</ul>
+    <p>${disease.complications}</p>
+    <p>${disease.risk}</p>
+    <p>Source: 
+    `;
+  for (let i = 0; i < disease.sources.length; i++) {
+    html += `
+    <a href="${disease.sources[i][1]}">${disease.sources[i][0]}</a>        
+     `;
+  }
+  html += '</p>';
   return html;
 };
 
