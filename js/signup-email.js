@@ -46,3 +46,11 @@ const passwordErrorAndCreateUser = (emailValue, password1Value, password2Value) 
   password1.value = '';
   password2.value = '';
 }
+
+// redirect user to home after successful signup
+auth.onAuthStateChanged(user => {
+  if (user) {
+    // console.log('you are logged in');
+    location.replace("./home.html")
+  }
+});

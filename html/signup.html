@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 
 <html lang="en" prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <title>Rokotin</title>
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keyword" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta property="og:title" content="Title" />
-        <meta property="og:description" content="Description" />
-        <meta property="og:image" content=" " />
-        <meta property="og:url" content=" " />
-        <meta name="twitter:card" content="summary_large_image" />
+    <title>Rokotin</title>
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="Keyword" />
 
-        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-        <link href="../css/-common.css" rel="stylesheet" />
-        <link href="../css/signup.css" rel="stylesheet" />
+    <meta property="og:title" content="Title" />
+    <meta property="og:description" content="Description" />
+    <meta property="og:image" content=" " />
+    <meta property="og:url" content=" " />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="../css/-common.css" rel="stylesheet" />
+    <link href="../css/signup.css" rel="stylesheet" />
 
-    <body>
+</head>
 
-        <header>
-            <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
-                <p id="profile-p" class="blue-text">
-                    AIMO
-                </p>
+<body>
+
+    <header>
+        <a id="profile" href="./profile.html">
+            <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
+            <p id="profile-p" class="blue-text">
+                AIMO
+            </p>
+        </a>
+
+        <a id="settings" href="./settings.html">
+            <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
+            <p id="settings-p" class="blue-text">
+                SETTINGS
+            </p>
+        </a>
+
+    </header>
+
+    <main>
+        <h1>
+            Welcome! <br />
+            <span class="blue-text">Please sign up:</span>
+        </h1>
+
+        <section id="main-content">
+            <!-- will add emails -->
+            <a href="./signup-email.html" class="signup-email-page">
+                <button id="signup-email">email</button>
             </a>
+            <button id="signup-omakanta">OmaKanta</button>
+            <button id="signup-facebook">Facebook</button>
+            <button id="signup-google">Google</button>
+            <button id="explore" class="button-grey">Explore the app without an account</button>
 
-            <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
-                <p id="settings-p" class="blue-text">
-                    SETTINGS
-                </p>
-            </a>
+        </section>
 
-        </header>
+    </main>
 
-        <main>
-            <h1> 
-                Welcome! <br/>
-                <span class="blue-text">Please sign up:</span>
-            </h1>
+    <footer>
+        <a id="home" href="./home.html">
+            <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
+            <p id="home-p" class="white-text">
+                HOME
+            </p>
+        </a>
 
-            <section id="main-content">
-                <!-- will add emails -->
-                    <button id="signup-email">email</button>
-                    <button id="signup-omakanta">OmaKanta</button>           
-                    <button id="signup-facebook">Facebook</button>           
-                    <button id="signup-google">Google</button>
-                    <button id="explore" class="button-grey">Explore the app without an account</button>
+        <a id="vaccinations" href="./vaccinations.html">
+            <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
+            <p id="vaccinations-p" class="white-text">
+                VACCINATIONS
+            </p>
+        </a>
 
-            </section>
+        <a id="calendar" href="./calendar.html">
+            <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
+            <p id="calendar-p" class="white-text">
+                CALENDAR
+            </p>
+        </a>
 
-        </main>
+        <a id="travel" href="./travel.html">
+            <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
+            <p id="travel-p" class="white-text">
+                TRAVEL
+            </p>
+        </a>
 
-        <footer>
-            <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
-                <p id="home-p" class="white-text">
-                    HOME
-                </p>
-            </a>
+    </footer>
 
-            <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
-                <p id="vaccinations-p" class="white-text">
-                    VACCINATIONS
-                </p>
-            </a>
+    <script src="../js/-common.js"></script>
+    <script src="../js/signup.js"></script>
 
-            <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
-                <p id="calendar-p" class="white-text">
-                    CALENDAR
-                </p>
-            </a>
+</body>
 
-            <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
-                <p id="travel-p" class="white-text">
-                    TRAVEL
-                </p>
-            </a>
-
-        </footer>
-
-        <script src="../js/-common.js"></script>
-        <script src="../js/signup.js"></script>
-
-    </body>
 </html>
