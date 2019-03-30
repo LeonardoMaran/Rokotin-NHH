@@ -43,14 +43,14 @@
 
         <main>
             <h1> 
-                <span class="blue-text"> </span>
+                <span class="blue-text"> Adults  </span>
             </h1>
 
             <h2>
-
+                According to the Finnish National Vaccination Program
             </h2>
 
-            <section id="main-content">
+            <section class="main-variable-content" id="main-content">
 
             </section>
 
@@ -86,6 +86,20 @@
             </a>
 
         </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDKOcvxMWbDoIjyzCLslmscuux4FXZn2CQ",
+            authDomain: "vaccify-rokotin-app.firebaseapp.com",
+            databaseURL: "https://vaccify-rokotin-app.firebaseio.com",
+            projectId: "vaccify-rokotin-app",
+            storageBucket: "vaccify-rokotin-app.appspot.com",
+            messagingSenderId: "179360692324"
+        };
+        firebase.initializeApp(config); 
+        </script>
 
         <script src="../js/-common.js"></script>
         <script src="../js/vaccinations.js"></script>
