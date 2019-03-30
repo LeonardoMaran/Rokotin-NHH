@@ -11,20 +11,20 @@ const showUpcomingVaccinationInfo = (doc) => {
   vaccineDiv.classList.add('main-content-home-item');
   vaccineDiv.innerHTML =
     `<a class="main-content-home-item-schedule" href="./calendar.html">
-    <p class="main-content-home-item-schedule-date">
+    <p class="main-content-home-item-schedule-date blue-text">
   ${convertTimeStamp(date.seconds)}
     </p>
-    <p class="main-content-home-item-schedule-status">
+    <p class="main-content-home-item-schedule-status grey-text">
     ${schedule}
     </p>
   </a>
 
   <a class="main-content-home-item-vaccine" href="">
-    <p class="main-content-home-item-vaccine-icon">
-        i
+    <p class="main-content-home-item-vaccine-icon blue-text">
+      i
     </p>
 
-    <p class="main-content-home-item-vaccine-name">
+    <p class="main-content-home-item-vaccine-name white-text">
   ${name}
     </p>
   </a>`;

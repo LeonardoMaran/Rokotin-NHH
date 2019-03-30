@@ -1,8 +1,4 @@
-.splash {
-    width: 180px;
+#splash {
+    width: 280px;
     height: 586px;
-}
-
-body {
-    max-height: 100vh;
 }
