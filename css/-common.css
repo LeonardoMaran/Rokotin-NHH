@@ -10,7 +10,7 @@
 }
 
 body {
-    background: lightgray;
+    background: rgb(235, 234, 234);
     min-height: 100vh;
     min-width: 100vw;
     padding: 1rem;
