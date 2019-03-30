@@ -35,6 +35,8 @@ submitButton.addEventListener('click', (e) =>{
     // set fields to empty
     nameSpan.value = '';
     zipSpan.value = '';
+    nameSpan.placeholder = '';
+    zipSpan.placeholder = '';
     // get values 
     db.collection('users').get().then((snapshot) =>{
         snapshot.docs.forEach(element => {
