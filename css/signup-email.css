@@ -2,7 +2,7 @@ main::-webkit-scrollbar {
     width: 0;
 }
 
-.main-content-login {
+.main-content-signup-email {
     padding: 0.4rem;
     text-align: center;
 }

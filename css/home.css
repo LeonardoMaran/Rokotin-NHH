@@ -1,0 +1,38 @@
+.main-content-home-item {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.main-content-home-item-schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content-home-item-vaccine {
+    background: #3BC4E1;
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    height: 3rem;
+    padding: 0.7rem 0.85rem;
+    width: 14rem;
+}
+
+.main-content-home-item-vaccine-icon {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding-left: 8px;
+    width: 1.6rem;
+}
+
+.main-content-home-item-vaccine-name {
+    line-height: 1.6rem;
+    padding-left: 0.85rem;
+}

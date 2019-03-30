@@ -18,11 +18,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
         <link href="../css/-common.css" rel="stylesheet" />
-        <link href="../css/profile.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <link href="../css/welcome.css" rel="stylesheet" />
 
     </head>
 
@@ -47,32 +43,12 @@
 
         <main>
             <h1> 
-                Your <span class="blue-text">profile</span>
+                Welcome!
             </h1>
 
-
-
             <section id="main-content">
-                <div class="image-container">
-                    <div class="profile-image">
-                        <img src="../assets/images/portrait.svg" alt="profile picture">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                </div>
-                <form class="user-info">
-                    <span>Your Name: </span>
-                    <input id = "full-name" type="text" name="full-name"/>
-                    <span>Your Birthday: </span>
-                    <input id = "birthday" type="text" name="birthday" />
-                    <span>Your Zip Code: </span>
-                    <input id = "zip-code" type="number" name="zipcode" onkeydown="return event.keyCode !== 69"/>
-                    <button class="submit-button">Submit</button>
-
-                </form>
-                <div class="button-container">
-                    <!-- <button class="add-button">Add new profile</button>
-                    <button class="delete-button">Delete profile</button> -->
-                </div>
+                <button id="login">Log in</button>
+                <button id="signup">Sign up</button>  
             </section>
 
         </main>
@@ -108,21 +84,8 @@
 
         </footer>
 
-        <script>
-            // Initialize Firebase
-            var config = {
-              apiKey: "AIzaSyDKOcvxMWbDoIjyzCLslmscuux4FXZn2CQ",
-              authDomain: "vaccify-rokotin-app.firebaseapp.com",
-              databaseURL: "https://vaccify-rokotin-app.firebaseio.com",
-              projectId: "vaccify-rokotin-app",
-              storageBucket: "vaccify-rokotin-app.appspot.com",
-              messagingSenderId: "179360692324"
-            };
-            firebase.initializeApp(config);
-            const db = firebase.firestore();
-          </script>
         <script src="../js/-common.js"></script>
-        <script src="../js/profile.js"></script>
-        
+        <script src="../js/welcome.js"></script>
+
     </body>
 </html>
