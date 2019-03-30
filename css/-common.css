@@ -69,16 +69,20 @@ h2 {
 header {
     background: white;
     display: flex;
-    height: 85px;
+    height: 96px;
     justify-content: space-between;
     margin: auto;
-    padding: 1.2rem;
+    padding: 1rem;
     width: 280px;
 }
 
 header p {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     text-align: center;
+}
+
+#settings {
+    margin-right: 1rem;
 }
 
 
@@ -91,7 +95,7 @@ footer {
     height: 85px;
     justify-content: space-between;
     margin: auto;
-    padding: 1.2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
     position: relative;
     width: 280px;
 }
@@ -109,8 +113,11 @@ footer::before {
 }
 
 footer p {
-    padding-top: 1rem;
     text-align: center;
+}
+
+#vaccinations{
+    margin-left: -1rem;
 }
 
 
@@ -121,12 +128,12 @@ main {
     background: white;
     display: flex;
     flex-direction: column;
-    height: 416px;
+    height: 405px;
     justify-content: flex-start;
     margin: auto;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 1.2rem;
+    padding: 2rem 1rem;
     width: 280px;
     z-index: -10;
 }

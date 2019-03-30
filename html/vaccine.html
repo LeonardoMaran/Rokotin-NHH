@@ -18,20 +18,22 @@
 
         <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
         <link href="../css/-common.css" rel="stylesheet" />
+        <link href="../css/vaccine.css" rel="stylesheet" />
+
     </head>
 
     <body>
 
         <header>
             <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="55px" width="55px" />
+                <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
                 <p id="profile-p" class="blue-text">
                     AIMO
                 </p>
             </a>
 
             <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="55px" width="55px" />
+                <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
                 <p id="settings-p" class="blue-text">
                     SETTINGS
                 </p>
@@ -39,16 +41,30 @@
 
         </header>
 
-        <main>
+        <main> 
+
             <h1> 
-                <span class="blue-text"> </span>
+                <span class="blue-text" id="longName"></span> <span>vaccine</span>
             </h1>
 
-            <h2>
+           
 
-            </h2>
-
-            <section id="main-content">
+            <a href="./calendar.html" class="vaccination-schedule-link">
+                <span class="vaccination-schedule-link-date status-text">
+                   Progress:
+                </span>
+                <span class="vaccination-schedule-link-status" id="status">
+               ✔
+                </span>
+            </a>
+            <div id="progressBar">3/3</div>
+            
+            <p>When:</p>
+            <p id="age">
+                2 months, 3 months, 6 months
+            </p>
+            <h2>Against: <span id="against"></span></h2>
+            <section class="main-variable-content" id="main-content">
 
             </section>
 
@@ -56,28 +72,28 @@
 
         <footer>
             <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="55px" width="55px" />
+                <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
                 <p id="home-p" class="white-text">
                     HOME
                 </p>
             </a>
 
             <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="55px" width="55px" />
+                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
                 <p id="vaccinations-p" class="white-text">
                     VACCINATIONS
                 </p>
             </a>
 
             <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="55px" width="55px" />
+                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
                 <p id="calendar-p" class="white-text">
                     CALENDAR
                 </p>
             </a>
 
             <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="55px" width="55px" />
+                <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
                 <p id="travel-p" class="white-text">
                     TRAVEL
                 </p>
@@ -86,6 +102,7 @@
         </footer>
 
         <script src="../js/-common.js"></script>
+        <script src="../js/vaccine.js"></script>
         
     </body>
 </html>

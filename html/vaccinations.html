@@ -18,6 +18,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
         <link href="../css/-common.css" rel="stylesheet" />
+        <link href="../css/home.css" rel="stylesheet" />
         <link href="../css/vaccinations.css" rel="stylesheet" />
 
     </head>
@@ -26,14 +27,14 @@
 
         <header>
             <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
+                <img id="profile-img" src="../assets/images/portrait.svg" height="55px" width="55px" />
                 <p id="profile-p" class="blue-text">
                     AIMO
                 </p>
             </a>
 
             <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
+                <img id="settings-img" src="../assets/images/settings-icon.svg" height="55px" width="55px" />
                 <p id="settings-p" class="blue-text">
                     SETTINGS
                 </p>
@@ -43,14 +44,14 @@
 
         <main>
             <h1> 
-                <span class="blue-text"> </span>
+                Vaccinations <br /> for <span class="blue-text">adults</span>
             </h1>
 
             <h2>
-
+                According to the <br /> Finnish National Vaccination Program
             </h2>
 
-            <section id="main-content">
+            <section class="main-variable-content" id="main-content">
 
             </section>
 
@@ -58,34 +59,48 @@
 
         <footer>
             <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
+                <img id="home-img" src="../assets/images/home-icon.svg" height="55px" width="55px" />
                 <p id="home-p" class="white-text">
                     HOME
                 </p>
             </a>
 
             <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
+                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="55px" width="55px" />
                 <p id="vaccinations-p" class="white-text">
                     VACCINATIONS
                 </p>
             </a>
 
             <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
+                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="55px" width="55px" />
                 <p id="calendar-p" class="white-text">
                     CALENDAR
                 </p>
             </a>
 
             <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
+                <img id="travel-img" src="../assets/images/travel-icon.svg" height="55px" width="55px" />
                 <p id="travel-p" class="white-text">
                     TRAVEL
                 </p>
             </a>
 
         </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDKOcvxMWbDoIjyzCLslmscuux4FXZn2CQ",
+            authDomain: "vaccify-rokotin-app.firebaseapp.com",
+            databaseURL: "https://vaccify-rokotin-app.firebaseio.com",
+            projectId: "vaccify-rokotin-app",
+            storageBucket: "vaccify-rokotin-app.appspot.com",
+            messagingSenderId: "179360692324"
+        };
+        firebase.initializeApp(config); 
+        </script>
 
         <script src="../js/-common.js"></script>
         <script src="../js/vaccinations.js"></script>
