@@ -32,7 +32,6 @@ const passwordErrorAndCreateUser = (emailValue, password1Value, password2Value) 
     }, 2000);
   } else {
     auth.createUserWithEmailAndPassword(emailValue, password2Value).then((cred) => {
-      console.log(cred);
     }).catch((err) => {
       errorMessage.innerHTML = err.message;
       setTimeout(() => {
