@@ -50,8 +50,6 @@
                 Your <span class="blue-text">profile</span>
             </h1>
 
-
-
             <section id="main-content">
                 <div class="image-container">
                     <div class="profile-image">
@@ -59,20 +57,27 @@
                         <i class="fas fa-pencil-alt"></i>
                     </div>
                 </div>
+
                 <form class="user-info">
-                    <span>Your Name: </span>
-                    <input id = "full-name" type="text" name="full-name"/>
-                    <span>Your Birthday: </span>
-                    <input id = "birthday" type="text" name="birthday" />
-                    <span>Your Zip Code: </span>
-                    <input id = "zip-code" type="number" name="zipcode" onkeydown="return event.keyCode !== 69"/>
-                    <button class="submit-button">Submit</button>
+                    <div class="main-content-profile">
+                        <label for="full-name">Name:</label>
+                        <input id="full-name" type="text" name="full-name"/>
+                    </div>
+
+                    <div class="main-content-profile">
+                        <label for="birthday">Birthday:</label>
+                        <input id="birthday" type="text" name="birthday" />
+                    </div>
+
+                    <div class="main-content-profile">
+                        <label for="zip-code">Zip code:</label>
+                        <input id="zip-code" type="number" name="zipcode" onkeydown="return event.keyCode !== 69"/>
+                    </div>
+
+                    <button class="submit-button white-text">Save</button>
 
                 </form>
-                <div class="button-container">
-                    <!-- <button class="add-button">Add new profile</button>
-                    <button class="delete-button">Delete profile</button> -->
-                </div>
+
             </section>
 
         </main>
