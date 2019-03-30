@@ -1,3 +1,8 @@
+main {
+    height: 520px;
+    padding-top: 13rem;
+}
+
 main::-webkit-scrollbar {
     width: 0;
 }
@@ -9,16 +14,19 @@ main::-webkit-scrollbar {
 
 label {
     color: #3BC4E1;
+    font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 0.5rem;
 }
 
 input {
+    background: white;
     display: block;
     height: 2.4rem;
     border: 1px solid #909090;
     border-radius: 1.2rem;
     margin: 0.25rem auto;
-    padding: 0.7rem 0.85rem;
+    padding: 0.7rem 0.85rem 1rem;
     text-align: center;
     width: 90%;
 }
@@ -33,4 +41,9 @@ button {
     padding: 0.7rem 0.85rem;
     text-align: center;
     width: 14rem;
+}
+
+#logo {
+    width: 100%;
+    padding: 1rem 2rem;
 }

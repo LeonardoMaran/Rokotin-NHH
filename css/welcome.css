@@ -1,6 +1,6 @@
 main {
-    height: 501px;
-    padding-top: 16rem;
+    height: 520px;
+    padding-top: 14rem;
 }
 
 main::-webkit-scrollbar {
@@ -8,6 +8,7 @@ main::-webkit-scrollbar {
 }
 
 button {
+    background: white;
     border: 2px solid #3BC4E1;
     color: #3BC4E1;
     display: block;
@@ -20,7 +21,21 @@ button {
     width: 75%;
 }
 
-.logo {
+#explore {
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 3.5rem auto;
+    padding: 0.8rem 0.85rem;
+    text-align: center;
+    width: 75%;
+    border: 1px solid #909090;
+    color: #909090;
+    display: block;
+    font-size: 1rem;
+}
+
+#logo {
     width: 100%;
     padding: 1rem 2rem;
 }

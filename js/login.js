@@ -37,3 +37,12 @@ const passwordErrorAndCreateUser = (emailValue, passwordValue) => {
   email.value = '';
   password.value = '';
 }
+
+
+// redirect user to home after successful login
+auth.onAuthStateChanged(user => {
+  if (user) {
+    // console.log('you are logged in');
+    location.replace("./home.html")
+  }
+});
