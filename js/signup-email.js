@@ -8,7 +8,6 @@ signupForm.addEventListener('submit', e => {
   // get form fields
   const name = signupForm['user-name'].value;
   const email = signupForm['user-email'].value;
-  console.log(typeof email);
   const password1Value = signupForm['user-password1'].value
   const password2Value = signupForm['user-password2'].value;
   passwordErrorAndCreateUser(email, password1Value, password2Value);
@@ -33,7 +32,6 @@ const passwordErrorAndCreateUser = (emailValue, password1Value, password2Value) 
     }, 2000);
   } else {
     auth.createUserWithEmailAndPassword(emailValue, password2Value).then((cred) => {
-      // console.log(cred);
     }).catch((err) => {
       errorMessage.innerHTML = err.message;
       setTimeout(() => {
