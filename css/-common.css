@@ -149,3 +149,36 @@ main::-webkit-scrollbar-track {
 main::-webkit-scrollbar-thumb {
     background: #3BC4E1;
 }
+
+/* ELEMENTS ********************************************************************* */
+
+label {
+    color: #3BC4E1;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    background: white;
+    display: block;
+    height: 2.4rem;
+    border: 1px solid #909090;
+    border-radius: 1.2rem;
+    margin: 0.25rem auto;
+    padding: 0.7rem 0.85rem 1rem;
+    text-align: center;
+    width: 90%;
+}
+
+button {
+    background: #3BC4E1;
+    border: 1px solid #3BC4E1;
+    display: block;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem auto;
+    padding: 0.7rem 0.85rem;
+    text-align: center;
+    width: 14rem;
+}
