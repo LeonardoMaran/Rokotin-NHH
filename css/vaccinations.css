@@ -1,0 +1,32 @@
+.main-content-home-item-vaccine-name{
+    text-transform: capitalize;
+}
+
+.main-content-home-item-vaccine{
+    width: 12rem;
+}
+
+.vaccination-schedule-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-img{
+    height: 35px;
+    width: 35px;
+}
+
+/* will remove after speaking to Phuc about home.css */
+
+main::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+main::-webkit-scrollbar-track {
+    background: white;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #3BC4E1;
+}

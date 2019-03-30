@@ -33,7 +33,6 @@ html {
 h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    margin-top: 0.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -70,7 +69,7 @@ h2 {
 header {
     background: white;
     display: flex;
-    height: 85px;
+    height: 96px;
     justify-content: space-between;
     margin: auto;
     padding: 1rem;
@@ -80,6 +79,10 @@ header {
 header p {
     padding-top: 0.5rem;
     text-align: center;
+}
+
+#settings {
+    margin-right: 1rem;
 }
 
 
@@ -125,7 +128,7 @@ main {
     background: white;
     display: flex;
     flex-direction: column;
-    height: 416px;
+    height: 405px;
     justify-content: flex-start;
     margin: auto;
     overflow-x: hidden;
