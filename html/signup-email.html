@@ -19,7 +19,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
     <link href="../css/-common.css" rel="stylesheet" />
-    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/signup-email.css" rel="stylesheet" />
 
 </head>
 
@@ -44,24 +44,33 @@
 
     <main>
         <h1>
-            Welcome back! <br />
-            <span class="blue-text">Please log in:</span>
+            <span class="blue-text">Sign up</span> <br />
+            with email
         </h1>
 
         <section id="main-content">
+            <form action="" id="signup-email-form">
+                <div class="main-content-signup-email">
+                    <label for="user-name">What is your first name?</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Name">
+                </div>
 
-            <form id="login-form">
-                <div class="main-content-login">
-                    <label for="user-email">Enter your email:</label>
+                <div class="main-content-signup-email">
+                    <label for="user-email">Enter your e-mail:</label>
                     <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
                 </div>
 
-                <div class="main-content-login">
-                    <label for="user-password">Enter your password:</label>
-                    <input type="password" id="user-password" name="user-password" placeholder="********">
+                <div class="main-content-signup-email">
+                    <label for="user-password1">Choose a password:</label>
+                    <input type="password" id="user-password1" name="user-password1" placeholder="********">
                 </div>
 
-                <button id="log-in" class="white-text">Log in</button>
+                <div class="main-content-signup-email">
+                    <label for="user-password2">Repeat your password:</label>
+                    <input type="password" id="user-password2" name="user-password2" placeholder="********">
+                </div>
+
+                <button id="sign-up" class="white-text">Sign up</button>
             </form>
             <p style="text-align: center; color: red" class="error-message"></p>
         </section>
@@ -126,7 +135,7 @@
     </script>
 
     <script src="../js/-common.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/signup-email.js"></script>
 
 </body>
 
