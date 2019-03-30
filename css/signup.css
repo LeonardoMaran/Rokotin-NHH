@@ -8,6 +8,7 @@ main::-webkit-scrollbar {
 }
 
 button {
+    background: white;
     border: 2px solid #3BC4E1;
     color: #3BC4E1;
     display: block;
