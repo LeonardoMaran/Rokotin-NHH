@@ -35,6 +35,7 @@ const passwordErrorAndCreateUser = (emailValue, password1Value, password2Value) 
     auth.createUserWithEmailAndPassword(emailValue, password2Value).then((cred) => {
       // console.log(cred);
     }).catch((err) => {
+      err.message = ''
       errorMessage.innerHTML = err.message;
       setTimeout(() => {
         errorMessage.innerHTML = '';
