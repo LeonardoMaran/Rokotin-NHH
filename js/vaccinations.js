@@ -32,8 +32,8 @@ const renderVaccine = vaccinations => {
         <a href="./vaccine.html?name=${
           vaccination[0]
         }" class="main-content-home-item-vaccine">
-          <span class="main-content-home-item-vaccine-icon">i</span>
-          <span class="main-content-home-item-vaccine-name">
+          <span class="main-content-home-item-vaccine-icon blue-text">i</span>
+          <span class="main-content-home-item-vaccine-name white-text">
              ${vaccination[0]}
           </span>
         </a>   
@@ -41,7 +41,7 @@ const renderVaccine = vaccinations => {
 
     const scheduleLink = `
         <a href="" class="vaccination-schedule-link">
-            <span class="vaccination-schedule-link-date status-text">
+            <span class="vaccination-schedule-link-date status-text grey-text">
                Progress: 
             </span>
             <img src="../assets/images/${checkProgress(
