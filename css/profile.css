@@ -1,20 +1,29 @@
 
-.image-container{
+
+.profile-image{    
+    
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.profile-image{    
-    flex: 1;
-    align-self: flex-end;
+    margin-bottom: 5px;
     
 }
 
-.image-button{
-    flex: 2;
-    align-self: flex-start;
-    width: 40%;
+.profile-image img{
+    height: 70px;
+    width: 70px;
+    /* border: 1px solid #3BC4E1;
+    border-radius: 50%; */
+
+}
+
+.fas{
+    position: absolute;
+    top: 0;
+    right: 90px;
+
 }
 
 .user-info{
