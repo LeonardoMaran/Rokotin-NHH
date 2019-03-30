@@ -25,6 +25,7 @@ input {
 
 button {
     background: #3BC4E1;
+    border: 1px solid #3BC4E1;
     display: block;
     height: 3rem;
     border-radius: 1.5rem;
