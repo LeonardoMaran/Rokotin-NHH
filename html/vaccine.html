@@ -18,6 +18,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
         <link href="../css/-common.css" rel="stylesheet" />
+        <link href="../css/home.css" rel="stylesheet" />
         <link href="../css/vaccine.css" rel="stylesheet" />
 
     </head>
@@ -26,14 +27,14 @@
 
         <header>
             <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="35px" width="35px" />
+                <img id="profile-img" src="../assets/images/portrait.svg" height="55px" width="55px" />
                 <p id="profile-p" class="blue-text">
                     AIMO
                 </p>
             </a>
 
             <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="35px" width="35px" />
+                <img id="settings-img" src="../assets/images/settings-icon.svg" height="55px" width="55px" />
                 <p id="settings-p" class="blue-text">
                     SETTINGS
                 </p>
@@ -49,51 +50,52 @@
 
            
 
-            <a href="./calendar.html" class="vaccination-schedule-link">
-                <span class="vaccination-schedule-link-date status-text">
-                   Progress:
+            <div class="item-vaccine-status">
+                <span class="vaccination-schedule-link-status item-vaccine-status-text" id="vaccine-status">1/3</span>
+            </div>
+
+            <div class="item-vaccine-next" >
+                <span class="main-content-home-item-vaccine-icon blue-text">i</span>
+                <span class="main-content-home-item-vaccine-name white-text" id="nextTime">
+                   Your next booster is due in June, 2020
                 </span>
-                <span class="vaccination-schedule-link-status" id="status">
-               ✔
-                </span>
-            </a>
-            <div id="progressBar">3/3</div>
+
+            </div>  
             
-            <p>When:</p>
-            <p id="age">
-                2 months, 3 months, 6 months
-            </p>
-            <h2>Against: <span id="against"></span></h2>
+            <p  class="vaccine-age">Age:<b id="age">2 months, 3 months, 6 months</b></p>
+            <div class="vaccine-checkbox">
+                
+            </div>
+            <h2 class="h2-protext">Protexts against the following diseases</h2>
             <section class="main-variable-content" id="main-content">
 
             </section>
 
         </main>
-
         <footer>
             <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="35px" width="35px" />
+                <img id="home-img" src="../assets/images/home-icon.svg" height="55px" width="55px" />
                 <p id="home-p" class="white-text">
                     HOME
                 </p>
             </a>
 
             <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="35px" width="35px" />
+                <img id="vaccinations-img" src="../assets/images/vaccination-icon-selected.svg" height="55px" width="55px" />
                 <p id="vaccinations-p" class="white-text">
                     VACCINATIONS
                 </p>
             </a>
 
             <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="35px" width="35px" />
+                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="55px" width="55px" />
                 <p id="calendar-p" class="white-text">
                     CALENDAR
                 </p>
             </a>
 
             <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="35px" width="35px" />
+                <img id="travel-img" src="../assets/images/travel-icon.svg" height="55px" width="55px" />
                 <p id="travel-p" class="white-text">
                     TRAVEL
                 </p>
