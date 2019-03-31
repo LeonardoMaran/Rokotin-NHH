@@ -1,184 +1,97 @@
 <!DOCTYPE html>
 
 <html lang="en" prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <title>Rokotin</title>
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keyword" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta property="og:title" content="Title" />
-        <meta property="og:description" content="Description" />
-        <meta property="og:image" content=" " />
-        <meta property="og:url" content=" " />
-        <meta name="twitter:card" content="summary_large_image" />
+    <title>Rokotin</title>
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="Keyword" />
 
-        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-        <link href="../css/-common.css" rel="stylesheet" />
-        <link href="../css/travel.css" rel="stylesheet" />
+    <meta property="og:title" content="Title" />
+    <meta property="og:description" content="Description" />
+    <meta property="og:image" content=" " />
+    <meta property="og:url" content=" " />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="../css/-common.css" rel="stylesheet" />
+    <link href="../css/travel.css" rel="stylesheet" />
 
-    <body>
+</head>
 
-        <header>
-            <a id="profile" href="./profile.html">
-                <img id="profile-img" src="../assets/images/portrait.svg" height="55px" width="55px" />
-                <p id="profile-p" class="blue-text">
-                    AIMO
-                </p>
-            </a>
+<body>
 
-            <a id="settings" href="./settings.html">
-                <img id="settings-img" src="../assets/images/settings-icon.svg" height="55px" width="55px" />
-                <p id="settings-p" class="blue-text">
-                    SETTINGS
-                </p>
-            </a>
+    <header>
+        <a id="profile" href="./profile.html">
+            <img id="profile-img" src="../assets/images/portrait.svg" height="55px" width="55px" />
+            <p id="profile-p" class="blue-text">
+                AIMO
+            </p>
+        </a>
 
-        </header>
+        <a id="settings" href="./settings.html">
+            <img id="settings-img" src="../assets/images/settings-icon.svg" height="55px" width="55px" />
+            <p id="settings-p" class="blue-text">
+                SETTINGS
+            </p>
+        </a>
 
-        <main>
-            <h1> 
-                Where are you <br/>
-                going to <span class="blue-text">travel</span>?
-            </h1>
+    </header>
 
-            <label for="search-country">Search countries:</label>
-            <input type="text" id="search-country" name='search-country' placeholder="enter country name">
+    <main>
+        <h1>
+            Where are you <br />
+            going to <span class="blue-text">travel</span>?
+        </h1>
 
-            <section id="main-content">
+        <label for="search-country">Search countries:</label>
+        <input type="text" id="search-country" name='search-country' placeholder="enter country name">
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
+        <section id="main-content">
+        </section>
 
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
+    </main>
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
+    <footer>
+        <a id="home" href="./home.html">
+            <img id="home-img" src="../assets/images/home-icon.svg" height="55px" width="55px" />
+            <p id="home-p" class="white-text">
+                HOME
+            </p>
+        </a>
 
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
+        <a id="vaccinations" href="./vaccinations.html">
+            <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="55px" width="55px" />
+            <p id="vaccinations-p" class="white-text">
+                VACCINATIONS
+            </p>
+        </a>
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
+        <a id="calendar" href="./calendar.html">
+            <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="55px" width="55px" />
+            <p id="calendar-p" class="white-text">
+                CALENDAR
+            </p>
+        </a>
 
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
+        <a id="travel" href="./travel.html">
+            <img id="travel-img" src="../assets/images/travel-icon-selected.svg" height="55px" width="55px" />
+            <p id="travel-p" class="white-text">
+                TRAVEL
+            </p>
+        </a>
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
+    </footer>
 
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
+    <script src="../js/-common.js"></script>
+    <script src="../js/countries.js"></script>
+    <script src="../js/travel.js"></script>
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
+</body>
 
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
 
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
-
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
-
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
-
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
-
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
-
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
-
-                <a class="main-content-travel-country" href="">
-                    <p class="main-content-travel-country-icon blue-text">
-                        i
-                    </p>
-
-                    <p class="main-content-travel-country-name white-text">
-                        Afghanistan
-                    </p>
-                </a>
-
-            </section>
-
-        </main>
-
-        <footer>
-            <a id="home" href="./home.html">
-                <img id="home-img" src="../assets/images/home-icon.svg" height="55px" width="55px" />
-                <p id="home-p" class="white-text">
-                    HOME
-                </p>
-            </a>
-
-            <a id="vaccinations" href="./vaccinations.html">
-                <img id="vaccinations-img" src="../assets/images/vaccination-icon.svg" height="55px" width="55px" />
-                <p id="vaccinations-p" class="white-text">
-                    VACCINATIONS
-                </p>
-            </a>
-
-            <a id="calendar" href="./calendar.html">
-                <img id="calendar-img" src="../assets/images/calendar-icon.svg" height="55px" width="55px" />
-                <p id="calendar-p" class="white-text">
-                    CALENDAR
-                </p>
-            </a>
-
-            <a id="travel" href="./travel.html">
-                <img id="travel-img" src="../assets/images/travel-icon.svg" height="55px" width="55px" />
-                <p id="travel-p" class="white-text">
-                    TRAVEL
-                </p>
-            </a>
-
-        </footer>
-
-        <script src="../js/-common.js"></script>
-        <script src="../js/travel.js"></script>
-        
-    </body>
 </html>

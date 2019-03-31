@@ -7,6 +7,13 @@
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
+    
+}
+
+*:focus {
+
+    outline:none;
+
 }
 
 body {
@@ -133,7 +140,8 @@ main {
     margin: auto;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 2rem 1rem;
+    padding: 1.3rem;
+
     width: 280px;
     z-index: -10;
 }
@@ -164,9 +172,12 @@ input {
     display: block;
     height: 2.4rem;
     border: 1px solid #909090;
+
+    color: #909090;
     border-radius: 1.2rem;
     margin: 0.25rem auto;
-    padding: 0.7rem 0.85rem 1rem;
+    line-height: 2.4rem;
+
     text-align: center;
     width: 90%;
 }
