@@ -409,7 +409,7 @@ const showVaccineInfo = ({ longName, age, against }) => {
 
 const generateDisease = disease => {
   console.log(disease);
-  let html = `
+  let html = `<div class="disease-info">
     <h3>${disease.name}</h3>
     <p>${disease.description}</p>
     <p>${disease.reason}</p>
@@ -431,7 +431,7 @@ const generateDisease = disease => {
     <a href="${disease.sources[i][1]}">${disease.sources[i][0]}</a>        
      `;
   }
-  html += '</p>';
+  html += '</p></div>';
   return html;
 };
 

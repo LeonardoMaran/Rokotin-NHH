@@ -1,0 +1,34 @@
+h1 {
+    font-size: 2rem;
+}
+
+
+
+.item-vaccine-status{
+    height: 2rem;
+    padding: 0.7rem 0.85rem;
+    border: 1.5px solid #3BC4E1;
+    border-radius: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-content: center;
+    background: linear-gradient()
+}
+
+.item-vaccine-status-text{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+.disease-info{
+    margin: 1rem;
+}
+
+.item-vaccine-next{
+    background: #3BC4E1;
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    height: 3rem;
+    padding: 0.7rem 0.85rem;
+
+}
