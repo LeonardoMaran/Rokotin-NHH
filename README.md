@@ -11,7 +11,7 @@ We are called Team Vaccify because we want to promote cross-border collaboration
 ## Nordic Health Hackathon 2019
 
 - What we made: https://rokotin.fi
-- Our prototype: http://bit.ly/RokotinPrototype
+- Our prototype: http://bit.ly/RokotinPrototypeNHH
 - Our presentation slides: http://bit.ly/RokotinPresentation
 
 ## Authors
