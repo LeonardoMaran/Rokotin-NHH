@@ -12,7 +12,12 @@ h1 {
     margin-bottom: 10px;
     display: flex;
     align-content: center;
-    background: linear-gradient()
+    
+    background: linear-gradient(to right, #eaa200 33%, white 0%);
+}
+
+.item-vaccine-status-text{
+    color:white;
 }
 
 .item-vaccine-status-text{
@@ -30,5 +35,92 @@ h1 {
     display: flex;
     height: 3rem;
     padding: 0.7rem 0.85rem;
+}
 
+.vaccine-age{
+    margin: 20px 0 10px 10px;
+}
+
+.checkbox-input{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align:left;
+    margin: 10px 0;
+}
+
+input {
+    height: 2rem;
+    border: 1px solid #909090;
+    border-radius: 1.2rem;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+    border-radius: 1.5rem;
+}
+
+
+label{
+    padding-bottom: 0;
+    color:#909090;
+    font-size: 1rem;
+}
+
+.h2-protext{
+ text-align: left;
+ margin-left: 10px;
+}
+
+.disease-name{
+    text-align: center;
+    color: #3BC4E1;
+}
+
+
+
+.disease-description{
+    margin: 5px 0;
+    
+}
+
+.disease-reason{
+    margin: 5px 0;
+}
+
+
+.disease-symptom{
+    margin: 5px 0;
+    color: #726f6f;
+
+}
+
+.disease-info{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    
+}
+
+.disease-info > ul{
+    padding-left: 12px;
+}
+
+.sources-container{
+    display: flex;
+    flex-flow: column wrap; 
+    margin-top: 5px;
+}
+
+.sources-container >*{
+    margin: 3px 0;
+    color: #3BC4E1;
+}
+
+.complications-and-risks{
+    margin: 5px 0;
+}
+.complication-title{
+    color: #726f6f;
+    margin-bottom: 5px;
 }
