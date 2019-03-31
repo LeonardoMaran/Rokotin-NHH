@@ -26,8 +26,8 @@ button {
     height: 3rem;
     border-radius: 1.5rem;
     margin: 3.5rem auto;
-    padding: 0.8rem 0.85rem;
     text-align: center;
+    line-height: 3rem;
     width: 75%;
     border: 1px solid #909090;
     color: #909090;
