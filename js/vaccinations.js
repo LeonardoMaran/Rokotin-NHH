@@ -4,20 +4,20 @@ const db = firebase.firestore();
 const checkProgress = status => {
   const arrStatus = status.split(',').map(item => parseInt(item));
   if (arrStatus[0] === arrStatus[1]) {
-    return 'checkmark-round';
+    return 'checkmark-round.svg';
   }
   if (arrStatus[0] === 0) {
-    return 'x-mark';
+    return 'x-mark.png';
   }
   if (arrStatus[1] === 2) {
-    return 'progress-half';
+    return 'progress-half.svg';
   }
   if (arrStatus[1] === 3) {
     if (arrStatus[0] === 1) {
-      return 'progress-one-third';
+      return 'progress-one-third.svg';
     }
     if (arrStatus[0] === 2) {
-      return 'progress-two-thirds';
+      return 'progress-two-thirds.svg';
     }
   }
 };
@@ -46,7 +46,7 @@ const renderVaccine = vaccinations => {
             </span>
             <img src="../assets/images/${checkProgress(
               vaccination[1]
-            )}.svg" class="progress-img" >
+            )}" class="progress-img" >
         </a>
         `;
     div.innerHTML = infoLink + scheduleLink;
