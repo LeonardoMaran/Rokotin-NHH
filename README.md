@@ -13,7 +13,6 @@ We are called Team Vaccify because we want to promote cross-border collaboration
 - What we made: https://rokotin.fi
 - Our prototype: http://bit.ly/RokotinPrototypeNHH
 - Our presentation slides: http://bit.ly/RokotinPresentation
-
 ## Authors
 Team Vaccify is made up of five developers with diverse professional and personal backgrounds:
 
