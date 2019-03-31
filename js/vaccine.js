@@ -32,6 +32,7 @@ const vaccineInfo = [
     age: '12 months, 6 years',
     how: 'injection',
     checkboxes: ['I have had measles', 'I have had mumps', 'I have had rubella'],
+
     against: 'Measles, Mumps, Rubella',
     againstID: [4, 5, 10],
   },
@@ -41,6 +42,7 @@ const vaccineInfo = [
     age: '1.5 years, 6 years',
     how: 'injection',
     checkboxes: ['I have had chickenpox'],
+
     against: 'Chickenpox, Shingles',
     againstID: [0, 11],
   },
@@ -59,6 +61,7 @@ const vaccineInfo = [
     age: '11 years',
     how: 'injection',
     checkboxes: ["I don't have a vulva", "vagina, or cervix"],
+
     against: 'HPV-related cancer',
     againstID: [3],
   },
@@ -100,6 +103,7 @@ const diseaseInfo = [
     ],
     complications:
       'lung infection, breathing problems, heart damage, brain damage, paralysis, and death.',
+
     risk:
       'Groups at higher risk of complications include: infants, adolescents, adults, pregnant people, and immunocompromised people. ',
     sources: [
@@ -123,6 +127,7 @@ const diseaseInfo = [
     ],
     complications:
       'lung infection, breathing problems, heart damage, brain damage, paralysis, and death.',
+
     risk:
       'Groups at higher risk of complications include: immunocompromised people.',
     sources: [
@@ -145,6 +150,7 @@ const diseaseInfo = [
     ],
     complications:
       'loss of limbs, hearing loss, brain damage, and death.',
+
     risk:
       'Groups at higher risk of complications include: children under 5 and immunocompromised people.',
     sources: [
@@ -212,6 +218,7 @@ const diseaseInfo = [
     ],
     complications:
       'inflammation of the ovaries, testicles, pancreas, brain, and meninges (the tissue covering the brain and spinal cord).',
+
     risk:
       'Groups at higher risk of complications include: adults and immunocompromised people.',
     sources: [
@@ -236,6 +243,7 @@ const diseaseInfo = [
     ],
     complications:
       'lung inflammation, breathing problems, brain problems, convulsions, fainting, broken ribs, and loss of bladder control.',
+
     risk:
       'Groups at higher risk of complications include: children under 1 and immunocompromised people.',
     sources: [
@@ -259,6 +267,7 @@ const diseaseInfo = [
     ],
     complications:
       'loss of limbs, hearing loss, brain damage, sepsis, and death.',
+
     risk:
       'Groups at higher risk of complications include: children under 2, adults over 65, immunocompromised people, smokers, and people with cochlear implants or cerebrospinal fluid leaks.',
     sources: [
@@ -284,6 +293,7 @@ const diseaseInfo = [
     ],
     complications:
       'infection of the tissue covering the brain and spinal cord (meningitis), tingly feelings in the legs (paresthesia), paralysis, and death.',
+
     risk:
       'Groups at higher risk of complications include: children and immunocompromised people.',
     sources: [
@@ -309,6 +319,7 @@ const diseaseInfo = [
     ],
     complications:
       'electrolyte imbalance, metabolic acidosis, kidney problems, liver problems, and death.',
+
     risk:
       'Groups at higher risk of complications include: children and immunocompromised people.',
     sources: [
@@ -335,6 +346,7 @@ const diseaseInfo = [
     ],
     complications:
       'arthritis, brain infection, bleeding problems, pregnancy problems and birth defects (heart, liver, and spleen problems; also hearing loss, vision loss and intellectual disability).',
+
     risk:
       'Groups at higher risk of complications include: unborn babies, pregnant people, and immunocompromised people.',
     sources: [
@@ -359,6 +371,7 @@ const diseaseInfo = [
     ],
     complications:
       'long-term pain in the area where the rash appeared, even for months or years after the fact; also vision loss, hearing loss, lung inflammation, brain inflammation, and death. ',
+
     risk:
       'Groups at higher risk of complications include: older adults and immunocompromised people.',
     sources: [
@@ -385,6 +398,7 @@ const diseaseInfo = [
     ],
     complications:
       'broken bones, blood clots blocking the main lung artery (pulmonary embolism), lung inflammation, breathing problems, and death.',
+
     risk:
       'Groups at higher risk of complications include: immunocompromised people.',
     sources: [
@@ -430,6 +444,7 @@ const generateDisease = disease => {
     <p class="disease-description">${disease.description}</p>
     <p class="disease-reason">${disease.reason}</p>
     <p class="disease-symptom">${disease.symptoms[0]}</p> 
+
     <ul>
   `;
   for (let i = 1; i < disease.symptoms.length; i++) {
@@ -443,6 +458,7 @@ const generateDisease = disease => {
     <p>${disease.complications}</p>
     <p>${disease.risk}</p>
   </div><div class="sources-container">Sources: 
+
     `;
   for (let i = 0; i < disease.sources.length; i++) {
     html += `
@@ -450,6 +466,7 @@ const generateDisease = disease => {
      `;
   }
   html += '</div></div></div>';
+
   return html;
 };
 
@@ -468,6 +485,7 @@ const showDiseaseInfo = againstID => {
 for (let i = 0; i < vaccineInfo.length; i++) {
   if (vaccineInfo[i].shortName.toLowerCase() == name.toLowerCase()) {
     // console.log(vaccineInfo[i]);
+
     showVaccineInfo(vaccineInfo[i]);
     showDiseaseInfo(vaccineInfo[i].againstID);
   }

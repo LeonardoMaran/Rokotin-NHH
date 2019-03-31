@@ -141,6 +141,7 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 1.3rem;
+
     width: 280px;
     z-index: -10;
 }
@@ -171,10 +172,12 @@ input {
     display: block;
     height: 2.4rem;
     border: 1px solid #909090;
+
     color: #909090;
     border-radius: 1.2rem;
     margin: 0.25rem auto;
     line-height: 2.4rem;
+
     text-align: center;
     width: 90%;
 }

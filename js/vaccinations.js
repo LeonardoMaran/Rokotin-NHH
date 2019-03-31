@@ -47,6 +47,7 @@ const renderVaccine = vaccinations => {
             <img src="../assets/images/${checkProgress(
               vaccination[1]
             )}" class="progress-img" >
+
         </a>
         `;
     div.innerHTML = infoLink + scheduleLink;
