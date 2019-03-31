@@ -7,6 +7,13 @@
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
+    
+}
+
+*:focus {
+
+    outline:none;
+
 }
 
 body {
