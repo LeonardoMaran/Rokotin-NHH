@@ -16,6 +16,17 @@ h1 {
     background: linear-gradient(to right, #eaa200 33%, white 0%);
 }
 
+.item-vaccine-status-checked{
+    background: linear-gradient(to right, #3BC4E1 0%, #3BC4E1 0%); 
+}
+
+.item-vaccine-status-checked .item-vaccine-status-text{
+ margin-left: auto;
+ margin-right: auto; 
+ 
+}
+ 
+
 .item-vaccine-status-text{
     color:white;
 }
