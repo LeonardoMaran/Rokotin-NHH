@@ -60,7 +60,7 @@ const vaccineInfo = [
     longName: 'Human Papillomavirus (HPV) vaccine',
     age: '11 years',
     how: 'injection',
-    checkboxes: ["I don't have a vulva", "vagina, or cervix"],
+    checkboxes: ["I don't have a vulva, vagina, or cervix"],
 
     against: 'HPV-related cancer',
     againstID: [3],
@@ -480,6 +480,11 @@ const showDiseaseInfo = againstID => {
     });
   });
   mainContent.innerHTML = htmlMainContent;
+
+  const inputCheckbox =document.querySelectorAll('input[type="checkbox"]');
+  
+  checkNeedVaccine(inputCheckbox)
+
 };
 
 for (let i = 0; i < vaccineInfo.length; i++) {
@@ -490,3 +495,35 @@ for (let i = 0; i < vaccineInfo.length; i++) {
     showDiseaseInfo(vaccineInfo[i].againstID);
   }
 }
+
+function checkNeedVaccine(inputCheckbox){
+  const vaccineStatus= document.querySelector('.item-vaccine-status');
+  const vaccineStatusText= document.querySelector('.item-vaccine-status-text');
+  inputCheckbox.forEach((itemCheck)=>{
+    console.log(itemCheck);
+    
+    itemCheck.addEventListener('change', e => {
+      console.log(e.target);
+      console.log(allInputCheck(inputCheckbox));
+          if (allInputCheck(inputCheckbox)){
+            vaccineStatus.classList.add('item-vaccine-status-checked');
+            vaccineStatusText.textContent='3/3'
+          }
+          else {
+            vaccineStatus.classList.remove('item-vaccine-status-checked');
+            vaccineStatusText.textContent='1/3'
+          }
+    
+    })
+  })
+}
+
+function allInputCheck(inputCheckbox){
+  let allCheck= true;
+  inputCheckbox.forEach((itemCheck)=>{
+    if(!itemCheck.checked) {allCheck= false}
+   
+  })
+  return allCheck;
+}
+

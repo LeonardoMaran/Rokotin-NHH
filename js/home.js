@@ -19,7 +19,7 @@ const showUpcomingVaccinationInfo = (doc) => {
     </p>
   </a>
 
-  <a class="main-content-home-item-vaccine" href="">
+  <a class="main-content-home-item-vaccine" href="./vaccine.html?name=${name}">
     <p class="main-content-home-item-vaccine-icon blue-text">
       i
     </p>
